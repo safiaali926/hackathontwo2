@@ -22,7 +22,7 @@ export default function faq() {
                 <li>
                   <span className="mx-2">/</span>
                 </li>
-                <li className="text-pink-500 font-semibold">Shopping Cart</li>
+                <li className="text-pink-500 font-semibold">FAQ</li>
               </ol>
             </nav>
           </div>

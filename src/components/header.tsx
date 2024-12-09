@@ -93,7 +93,7 @@ function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/home/option3" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/signin" className="block px-4 py-2 hover:bg-gray-100">
                       Sign in
                     </Link>
                   </li>
