@@ -186,7 +186,7 @@ export default function About() {
               <img
                 src={testimonials[index].image}
                 alt={testimonials[index].name}
-                className="w-full h-full rounded-full"
+                className="w-full h-full "
               />
             </div>
           ))}
@@ -205,7 +205,7 @@ export default function About() {
             <div
               key={index}
               onClick={() => handleTestimonialChange(index)}
-              className={`w-3 h-3 rounded-full cursor-pointer ${index === currentTestimonialIndex ? 'bg-pink-500' : 'bg-gray-300'}`}
+              className={`w-3 h-3 rounded-full  cursor-pointer ${index === currentTestimonialIndex ? 'bg-pink-500' : 'bg-gray-300'}`}
             ></div>
           ))}
         </div>

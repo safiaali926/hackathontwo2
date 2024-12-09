@@ -93,6 +93,16 @@ function Header() {
                     </Link>
                   </li>
                   <li>
+                    <Link href="/cart" className="block px-4 py-2 hover:bg-gray-100">
+                      Cart
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/errorpage" className="block px-4 py-2 hover:bg-gray-100">
+                      404
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/signin" className="block px-4 py-2 hover:bg-gray-100">
                       Sign in
                     </Link>
