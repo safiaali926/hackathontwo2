@@ -11,7 +11,7 @@ export default function faq() {
         <div className="w-full py-9 bg-[#F6F5FF]">
           {/* Breadcrumbs */}
           <div className="mx-auto container px-4">
-            <h1 className="text-2xl font-bold text-[#1D3178]">Shopping Cart</h1>
+            <h1 className="text-2xl font-bold text-[#1D3178]">FAQ</h1>
             <nav className="text-sm text-gray-600 mb-2">
               <ol className="list-reset flex">
                 <li>

@@ -43,7 +43,7 @@ function Header() {
             <option className="text-gray-800">EUR</option>
             <option className="text-gray-800">GBP</option>
           </select>
-          <Link href="#" className="flex items-center hover:underline">
+          <Link href="/signin" className="flex items-center hover:underline">
             <UserRound className="w-4 h-4 mr-2" />
             Login
           </Link>
@@ -169,7 +169,7 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/home/option3" className="block p-2 hover:text-pink-400">
+                  <Link href="/signin" className="block p-2 hover:text-pink-400">
                     Sign in
                   </Link>
                 </li>
