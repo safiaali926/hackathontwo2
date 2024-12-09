@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Search, Heart, ShoppingCart, ChevronDown, Menu, X, Mail, PhoneCall } from "lucide-react";
+import { UserRound } from 'lucide-react';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,6 +44,10 @@ function Header() {
             <option className="text-gray-800">GBP</option>
           </select>
           <Link href="#" className="flex items-center hover:underline">
+            <UserRound className="w-4 h-4 mr-2" />
+            Login
+          </Link>
+          <Link href="#" className="flex items-center hover:underline">
             <Heart className="w-4 h-4 mr-2" />
             Wishlist
           </Link>
@@ -83,7 +88,7 @@ function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/home/option2" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/faq" className="block px-4 py-2 hover:bg-gray-100">
                       FAQ
                     </Link>
                   </li>
