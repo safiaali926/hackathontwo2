@@ -116,7 +116,7 @@ function Header() {
               )}
             </li>
             <li>
-              <Link href="/errorpage" className="hover:text-pink-500">
+              <Link href="/cart" className="hover:text-pink-500">
                 Pages
               </Link>
             </li>
@@ -194,8 +194,13 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/cartt" className="block p-2 hover:text-pink-400">
+                  <Link href="/cart" className="block p-2 hover:text-pink-400">
                     cart
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/productdisplay" className="block p-2 hover:text-pink-400">
+                    P Display
                   </Link>
                 </li>
               </ul>
