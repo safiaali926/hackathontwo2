@@ -107,6 +107,11 @@ function Header() {
                       Sign in
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/productdisplay" className="block px-4 py-2 hover:bg-gray-100">
+                      P Display
+                    </Link>
+                  </li>
                 </ul>
               )}
             </li>
@@ -181,6 +186,16 @@ function Header() {
                 <li>
                   <Link href="/signin" className="block p-2 hover:text-pink-400">
                     Sign in
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/errorpage" className="block p-2 hover:text-pink-400">
+                    404
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/cartt" className="block p-2 hover:text-pink-400">
+                    cart
                   </Link>
                 </li>
               </ul>

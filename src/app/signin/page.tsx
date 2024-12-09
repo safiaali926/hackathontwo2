@@ -18,7 +18,7 @@ export default function Login() {
               <li>
                 <span className="mx-2">/</span>
               </li>
-              <li className="text-pink-500 font-semibold">FAQ</li>
+              <li className="text-pink-500 font-semibold">Sign in</li>
             </ol>
           </nav>
         </div>
