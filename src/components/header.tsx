@@ -46,7 +46,7 @@ function Header() {
             <Heart className="w-4 h-4 mr-2" />
             Wishlist
           </Link>
-          <Link href="#" className="relative">
+          <Link href="/cart" className="relative">
             <ShoppingCart className="w-5 h-5" />
           </Link>
         </div>
