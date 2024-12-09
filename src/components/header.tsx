@@ -207,8 +207,8 @@ function Header() {
             )}
           </li>
           <li>
-            <Link href="/aboutus" className="block hover:bg-pink-500 p-2 rounded">
-              About
+            <Link href="/cart" className="block hover:bg-pink-500 p-2 rounded">
+              Pages
             </Link>
           </li>
           <li>
