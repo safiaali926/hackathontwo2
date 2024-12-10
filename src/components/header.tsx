@@ -81,12 +81,13 @@ function Header() {
               </button>
               {/* Dropdown Menu */}
               {homeDropdownOpen && (
-                <ul className="absolute left-0 top-full mt-2 bg-white shadow-md rounded-md z-10">
+                <ul className="absolute w-56 left-0 top-full mt-2 bg-white shadow-md rounded-md z-10">
                   <li>
                     <Link href="/aboutus" className="block px-4 py-2 hover:bg-gray-100">
                       About
                     </Link>
                   </li>
+                  
                   <li>
                     <Link href="/faq" className="block px-4 py-2 hover:bg-gray-100">
                       FAQ
@@ -94,7 +95,7 @@ function Header() {
                   </li>
                   <li>
                     <Link href="/cart" className="block px-4 py-2 hover:bg-gray-100">
-                      Cart
+                      Add to Cart
                     </Link>
                   </li>
                   <li>
@@ -109,7 +110,42 @@ function Header() {
                   </li>
                   <li>
                     <Link href="/productdisplay" className="block px-4 py-2 hover:bg-gray-100">
-                      P Display
+                      Product Details
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/shop" className="block px-4 py-2 hover:bg-gray-100">
+                      Shop 1
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/shopleftsidebar" className="block px-4 py-2 hover:bg-gray-100">
+                      Shop 2
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/shoplist" className="block px-4 py-2 hover:bg-gray-100">
+                      Shop 3
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/shippingpage" className="block px-4 py-2 hover:bg-gray-100">
+                      Shipping Page
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog" className="block px-4 py-2 hover:bg-gray-100">
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="block px-4 py-2 hover:bg-gray-100">
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/order" className="block px-4 py-2 hover:bg-gray-100">
+                      Order
                     </Link>
                   </li>
                 </ul>
@@ -121,7 +157,7 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/shop" className="hover:text-pink-500">
+              <Link href="/shoplist" className="hover:text-pink-500">
                 Products
               </Link>
             </li>
@@ -200,8 +236,44 @@ function Header() {
                 </li>
                 <li>
                   <Link href="/productdisplay" className="block p-2 hover:text-pink-400">
-                    P Display
+                    Product Details
                   </Link>
+                </li>
+                
+                <li>
+                  <Link href="/shop" className="block p-2 hover:text-pink-400">
+                  Shop 1
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/shopleftsidebar" className="block p-2 hover:text-pink-400">
+                    Shop 2
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/shoplist" className="block p-2 hover:text-pink-400">
+                    Shop 3
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/shippingpage" className="block p-2 hover:text-pink-400">
+                  Shipping Page
+                  </Link>
+                  <li>
+                  <Link href="/blog" className="block p-2 hover:text-pink-400">
+                  Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="block p-2 hover:text-pink-400">
+                  Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/order" className="block p-2 hover:text-pink-400">
+                  Order
+                  </Link>
+                </li>
                 </li>
               </ul>
             )}
@@ -212,7 +284,7 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/errorpage" className="block hover:bg-pink-500 p-2 rounded">
+            <Link href="/shoplist" className="block hover:bg-pink-500 p-2 rounded">
               Products
             </Link>
           </li>

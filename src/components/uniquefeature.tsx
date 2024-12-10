@@ -49,7 +49,7 @@ export default function Uniquefeature() {
             <div className="mt-6 flex flex-col items-center md:flex-row md:items-start md:space-x-6">
               {/* Center button in mobile view */}
               <Link
-                href="/"
+                href="/shoplist"
                 className="px-6 py-3 bg-pink-500 text-white rounded-sm hover:bg-green-500 hover:text-white text-center"
               >
                 Shop Now →

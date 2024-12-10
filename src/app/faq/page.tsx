@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from "next/link"
 export default function faq() {
   return (
 
@@ -110,7 +110,9 @@ export default function faq() {
             </div>
           </div>
         </div>
+        
       </div>
+      
     </div>
   );
 }

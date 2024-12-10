@@ -1,7 +1,7 @@
 import React from "react";  
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { RxInstagramLogo } from 'react-icons/rx';
-
+import Image from "next/image"
 const BlogPage: React.FC = () => {
   const blogPosts = [
     {
@@ -186,6 +186,7 @@ const BlogPage: React.FC = () => {
           </div>
         </aside>
       </div>
+      <div className='place-items-center'><Image src="/bg2.png" alt="footerimg" width={900} height={93}></Image></div>
     </section>
   );
 };
