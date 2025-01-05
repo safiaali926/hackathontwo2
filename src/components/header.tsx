@@ -114,7 +114,7 @@ function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/shop" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/product" className="block px-4 py-2 hover:bg-gray-100">
                       Shop 1
                     </Link>
                   </li>
@@ -241,7 +241,7 @@ function Header() {
                 </li>
                 
                 <li>
-                  <Link href="/shop" className="block p-2 hover:text-pink-400">
+                  <Link href="/product" className="block p-2 hover:text-pink-400">
                   Shop 1
                   </Link>
                 </li>

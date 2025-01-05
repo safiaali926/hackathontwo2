@@ -1,92 +1,41 @@
+// components/Trendingproducts.tsx
 import Image from "next/image";
+import Link from "next/link";
+
+const products = [
+  { id: 13, title: "Cantilever chair", price: "$26.00", imgSrc: "/p7.png" },
+  { id: 14, title: "Cantilever chair", price: "$26.00", imgSrc: "/p5.png" },
+  { id: 15, title: "Cantilever chair", price: "$26.00", imgSrc: "/p4.png" },
+  { id: 15, title: "Cantilever chair", price: "$26.00", imgSrc: "/p8.png" },
+];
 
 export default function Trendingproducts() {
   return (
     <div className="py-10">
-      {/* Grid Layout for 4 Cards */}
       <div className="text-[#151875] text-3xl font-bold text-center mb-8">
         Trending Products
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
-        {/* Card 1 */}
-        <div className="bg-white shadow-lg rounded-lg p-4 w-full sm:w-[280px] md:w-[300px] h-[450px]">
-          {/* Image Section */}
-          <div className="relative w-full h-80 bg-gray-200 rounded-lg overflow-hidden mb-4">
-            <Image
-              src="/p3.png" // Replace with your image source
-              alt="Image 1"
-              layout="fill"
-              objectFit="contain" // Ensure image is not cropped
-            />
-          </div>
-          {/* Content Section */}
-          <div className="text-center">
-            <h3 className="text-[16px] font-semibold text-[#151875] mb-2">Cantilever chair</h3>
-            <p className="mb-4 text-[#151875]">
-              $26.00 <span className="line-through text-gray-500">$42.00</span>
-            </p>
-          </div>
-        </div>
-
-        {/* Card 2 */}
-        <div className="bg-white shadow-lg rounded-lg p-4 w-full sm:w-[280px] md:w-[300px] h-[450px]">
-          {/* Image Section */}
-          <div className="relative w-full h-80 bg-gray-200 rounded-lg overflow-hidden mb-4">
-            <Image
-              src="/p5.png" // Replace with your image source
-              alt="Image 2"
-              layout="fill"
-              objectFit="contain" // Ensure image is not cropped
-            />
-          </div>
-          {/* Content Section */}
-          <div className="text-center">
-            <h3 className="text-[16px] font-semibold text-[#151875] mb-2">Cantilever chair</h3>
-            <p className="mb-4 text-[#151875]">
-              $26.00 <span className="line-through text-gray-500">$42.00</span>
-            </p>
-          </div>
-        </div>
-
-        {/* Card 3 */}
-        <div className="bg-white shadow-lg rounded-lg p-4 w-full sm:w-[280px] md:w-[300px] h-[450px]">
-          {/* Image Section */}
-          <div className="relative w-full h-80 bg-gray-200 rounded-lg overflow-hidden mb-4">
-            <Image
-              src="/p4.png" // Replace with your image source
-              alt="Image 3"
-              layout="fill"
-              objectFit="contain" // Ensure image is not cropped
-            />
-          </div>
-          {/* Content Section */}
-          <div className="text-center">
-            <h3 className="text-[16px] font-semibold text-[#151875] mb-2">Cantilever chair</h3>
-            <p className="mb-4 text-[#151875]">
-              $26.00 <span className="line-through text-gray-500">$42.00</span>
-            </p>
-          </div>
-        </div>
-
-        {/* Card 4 */}
-        <div className="bg-white shadow-lg rounded-lg p-4 w-full sm:w-[280px] md:w-[300px] h-[450px]">
-          {/* Image Section */}
-          <div className="relative w-full h-80 bg-gray-200 rounded-lg overflow-hidden mb-4">
-            <Image
-              src="/p8.png" // Replace with your image source
-              alt="Image 4"
-              layout="fill"
-              objectFit="contain" // Ensure image is not cropped
-            />
-          </div>
-          {/* Content Section */}
-          <div className="text-center">
-            <h3 className="text-[16px] font-semibold text-[#151875] mb-2">Cantilever chair</h3>
-            <p className="mb-4 text-[#151875]">
-              $26.00 <span className="line-through text-gray-500">$42.00</span>
-            </p>
-          </div>
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+        {products.map((product) => (
+          <Link key={product.id} href={`/product/${product.id}`}>
+            <div className="bg-white shadow-lg p-4 w-full sm:w-[280px] md:w-[300px] h-[450px] cursor-pointer">
+              <div className="relative w-full h-80 bg-gray-200 overflow-hidden mb-4">
+                <Image
+                  src={product.imgSrc}
+                  alt={product.title}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-[16px] font-semibold text-[#151875] mb-2">
+                  {product.title}
+                </h3>
+                <p className="mb-4 text-[#151875]">{product.price}</p>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );

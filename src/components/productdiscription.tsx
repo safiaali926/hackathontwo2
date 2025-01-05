@@ -9,7 +9,7 @@ const DiscountItemtwo: React.FC = () => {
       <div className="m-9  bg-[#F9F8FE]">
         {/* Featured Products Title centered */}
         
-        <Tabs defaultValue="chair1" className="w-full "> {/* Set defaultValue to "chair1" */}
+        <Tabs defaultValue="c1" className="w-full "> {/* Set defaultValue to "chair1" */}
           <TabsList className=" flex justify-center space-x-8">
             <TabsTrigger value="c1" className="hover:text-pink-500 hover:underline text-[#151875]">
               Description 
